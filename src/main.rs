@@ -1,0 +1,12 @@
+// this loooks like c lol 
+//
+//
+//
+
+fn main() {
+    // create test array of 32 bit integer? do I have to define type like this every time? 
+    let mut test: [i32; 6] = [0,1,2,3,4,5]; // I can also do 0; 5?
+    for item in test {
+        print!("{item}"); //usually {} are objects, sometimes dynamic in other languages? 
+    }
+}
