@@ -1,0 +1,10 @@
+C:\Users\michael.stewart\first_rust\hello-ratatui\target\debug\deps\tracing_error-d7a026d4806c4287.d: C:\Users\michael.stewart\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tracing-error-0.2.1\src\lib.rs C:\Users\michael.stewart\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tracing-error-0.2.1\src\backtrace.rs C:\Users\michael.stewart\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tracing-error-0.2.1\src\error.rs C:\Users\michael.stewart\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tracing-error-0.2.1\src\layer.rs
+
+C:\Users\michael.stewart\first_rust\hello-ratatui\target\debug\deps\libtracing_error-d7a026d4806c4287.rlib: C:\Users\michael.stewart\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tracing-error-0.2.1\src\lib.rs C:\Users\michael.stewart\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tracing-error-0.2.1\src\backtrace.rs C:\Users\michael.stewart\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tracing-error-0.2.1\src\error.rs C:\Users\michael.stewart\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tracing-error-0.2.1\src\layer.rs
+
+C:\Users\michael.stewart\first_rust\hello-ratatui\target\debug\deps\libtracing_error-d7a026d4806c4287.rmeta: C:\Users\michael.stewart\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tracing-error-0.2.1\src\lib.rs C:\Users\michael.stewart\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tracing-error-0.2.1\src\backtrace.rs C:\Users\michael.stewart\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tracing-error-0.2.1\src\error.rs C:\Users\michael.stewart\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tracing-error-0.2.1\src\layer.rs
+
+C:\Users\michael.stewart\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tracing-error-0.2.1\src\lib.rs:
+C:\Users\michael.stewart\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tracing-error-0.2.1\src\backtrace.rs:
+C:\Users\michael.stewart\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tracing-error-0.2.1\src\error.rs:
+C:\Users\michael.stewart\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tracing-error-0.2.1\src\layer.rs:
