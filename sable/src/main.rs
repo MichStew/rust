@@ -77,8 +77,40 @@ impl Widget for &App { // pass the address of the app struct
       }
 }
 
+impl App {
+    fn draw(&self, frame: &mut Frame) { 
+        frame.render_widget(self, frame.area()); 
+    }}
 
 
+#{cfg(test)] 
+mod tests { //module tests
+            use super::*; // use everything from super  
+            use ratatui::style::Style; // onlue use style from std ratatui style library ? 
 
+            #[test] 
+            fn render() { 
+                let app = App::default();  // 
+                let mut buf = Buffer::empty(Rect::new(0,0,50,4)); // suppose its mutable for
+                                                                  // resizing? also corner
+                                                                  // coordinates?  
+                app.render(buf.area, &mut buf); 
+
+                let mut expected = Buffer::with_lines(vec![
+            "¿¿¿¿¿¿¿¿¿¿¿¿¿¿ Counter App Tutorial ¿¿¿¿¿¿¿¿¿¿¿¿¿¿",
+            "¿                    Value: 0                    ¿",
+            "¿                                                ¿",
+            "¿¿ Decrement <Left> Increment <Right> Quit <Q> ¿¿¿",] );
+                let title_style = style::new().bold();
+                let counter_style = Style::new.yellow();
+                let key_style = Style::new().blue.bold(); 
+                expected.set_style(Rect::new(14,0,22,1), title_style); // not exactly sure what does
+                expected.sty_style(Rect::new(28,1,1,1), counter_style);
+                expected.set_style(Rect::new(13,3,6,1), key_style); 
+                expected.set_style(Rect::new(30,3,7,1), key_style); 
+                expected.set_style(Rect::new(43,3,4,1), key_style); 
+
+                assert_eq!(buf, expected); // imagine this throws error if we have any unexp
+                }}
 
 
