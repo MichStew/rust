@@ -1,4 +1,5 @@
 #[derive(Debug)]
+
 struct Rectangle {
     width: u32, 
     height: u32,
@@ -6,21 +7,42 @@ struct Rectangle {
 
 impl Rectangle {
     fn area(&self) -> u32 {
-        self.width * self.height 
+        self.width * self.height // return area 
     }
+    fn can_hold(&self, rect: &Rectangle) -> bool { // 2 addresses for self and compare rect 
+        let area = self.width * self.height; 
+        let area_2 = rect.height * rect.width; 
+        if area > area_2 { true } else {false} // want this to return 
+}
 }
 
 fn main() {
     let rect1 = (30,50); // tuple struct 
     let scale = 3;
     
-    let rect2 = Rectangle {
+    let rect2 = Rectangle { // should be able to call rect2.area since it is of rectangle type? 
         width : 30,
-        height: dbg!(50 * scale),
+        height: 50,
     };
+
+    let rect3 = Rectangle {
+        width: 10,
+        height: 40,
+    };
+
+    let rect4 = Rectangle {
+        width : 40, 
+        height : 90,
+    };
+
+    println!("can rect1 hold rect2? {}", rect2.can_hold(&rect3)); 
+
+
+
 
     // println!("rect2 is {rect2:#?}");
     println!("The area of the rectangle is {} square pixels", Rectangle::area(&rect2));
+    println!("the area of the rectangle is also {}", rect2.area());
     // dbg!(&rect2);
 }
 
