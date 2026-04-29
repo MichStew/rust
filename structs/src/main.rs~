@@ -13,9 +13,6 @@ impl Rectangle {
           height : size, 
       }
     }
-}
-
-impl Rectangle {
     fn area(&self) -> u32 {
         self.width * self.height // return area 
     }
@@ -53,9 +50,9 @@ fn main() {
     // println!("rect2 is {rect2:#?}");
     println!("The area of the rectangle is {} square pixels", Rectangle::area(&rect2));
     println!("the area of the rectangle is also {}", rect2.area());
-    // dbg!(&rect2);
-    let square = Rectangle::square(3); 
-    println!("square is {square:#?}");
+    // dbg!(&rect2);i
+    println!("the output of square associated method is {}", Rectangle::square(32)); // should
+                                                                                        // be obj
 }
 
 fn area(rect: &Rectangle) -> u32 {  // struct is type now
