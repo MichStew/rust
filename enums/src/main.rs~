@@ -35,6 +35,10 @@ fn main() {
 
     //let home = IPAddr::V4(String::from("127.0.0.")); 
 
-    let test = Message::ChangeColor(34,34,34); // should output the numbers maybe??
-    test.call();
+    //let test = Message::ChangeColor(34,34,34); // should output the numbers maybe??
+    //test.call();
+    
+    let some_number = Some(5); 
+    let some_char = Some('e'); 
+    let absent_number: Option<i32> = None; 
 }
