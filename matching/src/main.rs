@@ -28,6 +28,14 @@ fn value_in_cents(coin : Coin) -> u8 {
         }
     }
 
+fn describe_state_quarter(coin : Coin) -> Option<String> {
+    let Coin::Quarter(state) = coin else {
+        return None; 
+    }; 
+
+    if state.existed_in(1900) {
+
+
 fn main() {
     println!("a quarter is {} cents", value_in_cents(Coin::Quarter(usState::Alaska)));
 

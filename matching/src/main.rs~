@@ -29,7 +29,7 @@ fn value_in_cents(coin : Coin) -> u8 {
     }
 
 fn main() {
-    println!("a quarter is {} cents", value_in_cents(Coin::Quarter(Alaska)));
+    println!("a quarter is {} cents", value_in_cents(Coin::Quarter(usState::Alaska)));
 
     let five = Some(5); 
     let six = plus_one(five);
