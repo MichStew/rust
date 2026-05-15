@@ -1,5 +1,7 @@
 mod aggregator; 
-use aggregator::{SocialPost, Summary, default};
+use aggregator::{Pair, notify, SocialPost, Summary, default};
+use std::fmt::Display; 
+
 fn main() {
     let number_list = vec![33, 65, 27, 223, 63];
     
@@ -18,6 +20,10 @@ fn main() {
         x : "hello",
         y : -45,
     };
+
+
+    let return_test = Pair::new(55, 32); 
+    return_test.cmp_display();
 
 
     let result = point1.mixup(point2); // can I pass a struct?
@@ -39,10 +45,21 @@ let test = SocialPost {
     repost : false,
 };
 
+
 println!("1 new post: {}",test.summarize());
+notify(&test,&default_test);
 
+let string1 = String::from("abcd");
+let string2 = "xyz";
 
+let result = longest(string1.as_str(), string2); 
+println!("The longest string is {result}");
   }
+
+
+fn longest<'a>(x : &'a str, y : &'a str)  -> &'a str {
+    if x.len() > y.len() { x } else { y }
+}
 
 #[derive(Debug)]
 struct Point <X1, Y1> {
